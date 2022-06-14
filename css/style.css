@@ -2561,8 +2561,8 @@ select:focus {
 }
 
 .sorter li.active {
-	border: 2px solid rgba(24, 0, 108, 1);
-	color: rgba(24, 0, 108, 1);
+	border: 3px solid #8461FF;
+	color: #8461FF;
 }
 
 li>a {
