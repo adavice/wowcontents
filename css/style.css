@@ -4737,20 +4737,34 @@ li>a {
 	display: inline-flex;
 	align-items: center;
 	background-color: #fff;
-	border-radius: 20px;
+	box-shadow: 0 0 20px 1px white;
+	color: #DC6DFF;
+    border-radius: 10px;
+    border: 3px solid #DC6DFF;
 }
 
-.web_section img {
-	height: 39px;
-	width: auto;
-	box-shadow: 0 0 20px 1px white;
-	border-radius: 10px;
+.first_block.yellow_block{
+	color: #FFCA00;
+	border: 3px solid #FFCA00;
+}
+
+.first_block img{
+    width: 40px;
+    padding: 5px;
+}
+
+h2.title_section{
+	color: #DC6DFF !important;
+}
+
+.first_block.yellow_block h2.title_section{
+	color: #FFCA00 !important;
 }
 
 .title_section {
 	margin-bottom: 0 !important;
-	padding: 0 15px;
-	font-size: 18px !important;
+	padding: 0 5px 0 5px !important;
+	font-size: 16px !important;
 }
 
 .page_links {
