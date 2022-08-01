@@ -5147,3 +5147,17 @@ h2.title_section{
 .img-game{
 	width: 60%;
 }
+
+.for_form {
+    float: right;
+    padding-top: 25px;
+}
+
+.for_form.second_text{
+	float: none;
+	width: auto;
+}
+
+.for_form ul{
+	padding-left: 20px;
+}
