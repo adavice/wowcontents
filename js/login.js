@@ -20,4 +20,10 @@ $(document).ready(function(){
             }
          });
     }
+
+
+    document.querySelector(".navbar-toggle").addEventListener("click", function () {
+        document.querySelector(".navbar-collapse").classList.toggle("active");
+      });
+
 })

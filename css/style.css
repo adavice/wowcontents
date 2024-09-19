@@ -1611,6 +1611,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 .header .navbar-collapse .navbar-nav {
 	display: flex;
 	flex-basis: auto;
+	text-align: center;
 }
 
 .ltpwrl_social_icons {
@@ -3700,9 +3701,9 @@ h2.terms_title{
 	}
 
 	.navbar-nav>li {
-		padding: 5px 5px 5px 20px;
-		border-bottom: 1px solid var(--white_bg);
-	}
+        padding: 5px 5px 5px 20px;
+        border-bottom: 1px solid #ffffff42;
+    }
 
 	#profile {
 		font-weight: 700;
@@ -5222,6 +5223,7 @@ h2.title_section{
 }
 
 /* bootstrap 5 fix */
+
 .main .main_container > .container:nth-child(1) {
 	display: flex;
 	flex-wrap: nowrap;
