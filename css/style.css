@@ -233,6 +233,13 @@ img {
 	.navbar-header a{
 		margin-top: 0px;
 	}
+
+	.navbar-default .navbar-nav a {
+		padding: 0;
+		margin: 10px;
+		display: block;
+	}
+
 }
 
 .navbar-header img {
@@ -3661,6 +3668,15 @@ h2.terms_title{
 	}
 	.game .wthree_blog_right {
 		display: none;
+	}
+	.blog-image-ltpwrl {
+		width: 100%;
+	}
+	.blog-text-ltpwrls {
+		width: 100%;
+	}
+	[class^="blog"][class$="-ltpwrls"] {
+		flex-direction: column;
 	}
 }
 
