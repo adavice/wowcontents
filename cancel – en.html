@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Contact Us</title>
+	<title>Cancel Membership</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<!-- Google Tag Manager -->
@@ -21,8 +21,8 @@
        Skill games, Classic games,  quiz,  skill,  educational,  shooting,  casino,  bubble-shooter,  dress-up,  adventure,  time-management,  Mind games,  sports,  tower-defense,  racing,  animals,  strategy,  arcade,  platform,   board-and-card,  action, ">
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- css -->
 	<link rel="icon" type="image/png" href="./wowcontents-favicon.ico" />
+	<!-- css -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!--// css -->
@@ -34,7 +34,7 @@
 	<script src="js/login.js"></script>
 </head>
 
-<body>
+<body class="login_page cancel">
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVZPCLL" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
@@ -61,10 +61,9 @@
 						<li class="hover-effect"><a href="about.html">About</a></li>
 						<li class="hover-effect"><a href="games.html">Games</a></li>
 						<li class="hover-effect"><a href="news.html">News</a></li>
-						<li class="hover-effect"><a href="tips-1.html">Gaming Tips</a></li>
-						<li class="hover-effect active"><a href="contactus.html">Contact</a></li>
-						<li class="hover-effect"><a href="cancel.html">Cancel subscription</a>
-						</li>
+						 <li class="hover-effect"><a href="tips-1.html">Gaming Tips</a></li>
+						<li class="hover-effect"><a href="contactus.html">Contact</a></li>
+						<li class="hover-effect"><a href="cancel.html">Cancel subscription</a></li>
 						<li><a class="hover-effect" id="profile" href="./profile.html">
 								<img class="desk_only" src="images/login.svg" />
 								<span class="mob_only">Profile</span>
@@ -85,22 +84,57 @@
 
 	<div class="contact-agileinfo">
 		<div class="container">
-			<h2>Contact Us</h2>
-			<div class="col-md-4 contact-left-agile">
-				<div class="phone-agileits-ltpwrlayouts">
-					<h4>Email</h4>
-					<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a
-							href="mailto:mail@example.com"> support@wowcontents.com</a></p>
-				</div>
-			</div>
-			<div class="col-md-8 contact-right-ltpwr">
-				<form method="post">
-					<input type="text" id="name" class="text" name="name" placeholder="Name" required="">
-					<input type="text" id="email" class="text" name="email" placeholder="Email" required="">
-					<input type="text" id="phone" class="text" name="phone" placeholder="Phone" required="">
-					<input type="text" id="subject" class="text" name="subject" placeholder="Subject" required="">
-					<textarea name="message" id="message" placeholder="Message" required=""></textarea>
-					<input type="submit" class="more_btn" value="Send Message">
+			<h2>Automatic Membership Cancellation</h2>
+			<p>
+				Cancel your subscription using our online cancellation service.<br />
+				Please use the form below or send SMS with text STOP to the short number (from which you receive SMS
+				with content). After sending STOP, you will receive a free of charge notification that your subscription
+				has been stopped.
+			</p>
+			<p>
+				If you still have any questions, please contact us: <span
+					style="color: var(--bright)">support@wowcontents.com</span>.<br/>
+				One of our agents will get back to you as soon as possible – this usually takes 24 hours (except on
+				weekends and public holidays).<br/>
+				Our support center operates Mondays through Fridays, between 7 am and 4 pm GMT timezone.
+			</p>
+
+			<h3 style="margin: 50px auto 30px">To cancel your subscription please:</h3>
+			<div class="col-md-12 contact-right-ltpwr framed" style="max-width: 720px; margin: auto; float: none">
+				<p class="form_descr" style="color: var(--bright); text-align: center">Enter your mobile number, which serves as your username, and your email*.</p>
+				<p class="form_descr" style="font-size: 11px;">*We request your email address to verify your subscription and confirm subscription cancellation.</p>
+				<form id="home-option1-form" role="form">
+					<div class="row">
+						<div class="row">
+							<div class="form-group col-sm-4">
+								<label for="home-option1-phone-input">Mobile number</label>
+								<div>
+									<input type="tel" class="form-control required input form-input"
+										name="home-option1-phone-input" id="home-option1-phone-input"
+										placeholder="Mobile number" required="">
+								</div>
+							</div>
+
+							<div class="form-group col-sm-4">
+								<label for="home-option1-email-input">Email</label>
+								<div>
+									<input type="email" class="form-control required input form-input"
+										name="home-option1-email-input" id="home-option1-email-input"
+										placeholder="Email" required="">
+								</div>
+							</div>
+
+							<div class="form-group col-sm-4">
+								<div class=" form-group-submit-btn">
+									<button id="home-option1-submit-btn" type="submit" class="btn btn-primary button">
+										Cancel subscription
+									</button>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
 				</form>
 			</div>
 			<div class="clearfix"></div>
@@ -169,36 +203,6 @@
 		</div>
 	</div>
 	<!-- //footer -->
-	<script>
-
-		$('#form').on('submit', function () {
-			var formData = {
-				'name': $('#name').val(),
-				'email': $('#email').val(),
-				'phone': $('#phone').val(),
-				'subject': $('#subject').val(),
-				'message': $('#message').val(),
-			};
-
-			$('#form').prop('disabled', true);
-			window.dataLayer = window.dataLayer || [];
-			window.dataLayer.push({ 'event': 'send_form_talk_to_us' });
-			$.ajax({
-				type: 'POST',
-				url: '/c/contact_form',
-				data: formData,
-				encode: true,
-				success: function (data) {
-					window.location.replace("./signup_card.html");
-				},
-				error: function (XMLHttpRequest, textStatus, errorThrown) {
-					alert("Something is wrong.");
-				}
-			});
-			return false;
-		});
-
-	</script>
 </body>
 
 </html>
